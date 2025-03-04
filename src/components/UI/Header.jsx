@@ -1,4 +1,5 @@
 import {Navigation} from "lucide-react";
+import {NavLink} from "react-router";
 
 const Header = () => {
   return (
@@ -7,9 +8,11 @@ const Header = () => {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
-              <a className="block text-white bg-red-700 font-extrabold border-2 px-3  py-3 rounded-full">
-                <Navigation />
-              </a>
+              <NavLink to="/">
+                <a className="block text-white bg-red-700 font-extrabold border-2 px-3  py-3 rounded-full">
+                  <Navigation />
+                </a>
+              </NavLink>
             </div>
 
             <div className="hidden md:block">
@@ -38,7 +41,7 @@ const Header = () => {
                       className="text-gray-500 transition hover:text-red-700"
                       href="#"
                     >
-                      Services
+                      Service
                     </a>
                   </li>
                 </ul>
@@ -52,7 +55,7 @@ const Header = () => {
                   href="#"
                 >
                   Get Started
-                </a>
+                </a>{" "}
               </div>
 
               <div className="block md:hidden">
